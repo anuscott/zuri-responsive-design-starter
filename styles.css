@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
 }
-
+       /* NAv BAR */ 
 div.nav-bar {
     display: flex;
     justify-content: space-between;
@@ -43,6 +43,19 @@ ul li a:hover {
     background: #fff;
     padding: 0.5rem;
 }
+
+ .menu-btn {
+     display: none;
+     position: absolute;
+     top: 2%;
+     right: 10%;
+     z-index: 2;
+        font-size: 1.2rem;
+        color: white;
+        opacity: .6;
+ }
+
+    /*HERO SECTION*/
 
 div.hero-section {
     background: #304353;
@@ -86,6 +99,12 @@ div.hero-content-btn a {
     border-radius: 3px;
     letter-spacing: 2px;
 }
+
+div.hero-content-btn a:hover {
+    font-size: 1rem;
+}
+
+   /* SUB-HERO SECTION */
 
 div.hero-background {
     background: #f0f0f0;
@@ -208,6 +227,8 @@ div.box1 h5 {
     font-size: 1rem;
 }
 
+    /* GALLERY SECTION */
+
 div.gallery-section {
     background: #fff;
     padding: 4rem;
@@ -246,6 +267,8 @@ div.img img {
     width: 250px;
     height: 180px;
 }
+
+     /* FOOTER */
 
 div.footer {
     background: #304353;
@@ -339,9 +362,352 @@ div.footer-btn a {
     letter-spacing: 2px;
 }
 
+div.footer-btn a:hover {
+    font-size: 1rem;
+}
+
 div.footer h6 {
     text-align: center;
     color: #88949B;
     font-size: 1rem;
     padding-top: 6rem;
+}
+
+      /* MEDIA QUERIES */
+
+@media (max-width:768px) {
+    /* NAV */
+    div.nav-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 4rem;
+    }
+    
+    div.logo {
+        font-size: 1rem;
+        z-index: 2;
+    }
+    
+    ul.nav-links {
+       display: block;
+       position:absolute;
+       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+       padding: 4rem 2rem 2rem 0;
+       margin: 30px 0 0 -60px ;
+       background-color:  #3f5669;
+       opacity: 0.9;
+       width: 100%; 
+       transform: translateY(-400px);
+       transition: transform .5s ease-in-out;
+    }
+    
+    ul li {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        line-height: 2rem;
+    }
+
+    ul li a {
+        color:white;
+        opacity: 0.8;
+    }
+
+    ul li a:hover {
+        font-size:1.6rem ;
+        background: transparent;
+        color:#fff;
+    }
+
+    ul.nav-links.show {
+        transform: translateY(5px);
+    }
+
+    .menu-btn {
+        display: block; 
+    }
+
+    .menu-btn:hover {
+        cursor: pointer;
+        opacity: .3;
+        font-size: 1.5rem;
+    }
+
+    /* HERO SECTION */
+    
+div.hero-section {
+    padding: 5rem 2rem;
+}
+
+div.hero-content-heading h3 {
+    font-size: 1.5rem;
+}
+
+div.hero-content-heading p {
+    text-align: center;
+    padding-top: 0.6rem;
+    font-size: .9rem;
+    letter-spacing: 2px;
+}
+
+div.hero-content-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+div.hero-content-btn a {
+    font-size: 0.8rem;
+    padding: 9px 20px;
+}
+
+div.hero-content-btn a:hover {
+    font-size: 0.9rem;
+}
+
+    /* SUB-HERO SECTION */
+
+    div.hero-background {
+        padding: 5rem 2rem ;
+    }
+    
+    div.background {
+        padding: 12px 30px;
+        width: fit-content;
+        height: fit-content;
+        position: relative;
+    }
+    
+    div.background h4 {
+        padding: 1rem;
+    }
+    
+    div.background p {
+        padding: 0 0 1rem 1rem;
+        
+    }
+    
+    div.hero-background-pos {
+        display:none;
+    }
+    
+    div.snapshot-team p {
+        letter-spacing: 1.5px;
+        padding: 1rem 2rem;
+        
+    }
+    
+    div.snapshot-box {
+        padding: 3rem 6rem;
+    }
+    
+    div.snapshot-box-content {
+        flex-direction: column;
+    }
+    
+    div.box1 {
+        padding: 10px 20px;
+        width: 280px;
+        height: 220px;
+        margin-bottom: 20px;
+        
+    }
+    
+    div.box3 {
+        padding: 10px 20px;
+        width: 280px;
+        height: 220px;
+        margin-bottom: 20px;
+    }
+
+        /* GALLERY */
+
+    div.gallery-section {
+    background: #fff;
+    padding: 4rem 2rem;
+}
+    
+        /* FOOTER */
+
+div.footer {
+    padding: 2rem;
+}
+
+div.footer-input {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+input[type="text"] {
+    margin-top: 2rem;
+    padding: 10px 20px;
+    width: 81%;
+}
+
+input[type="email"] {
+    margin-top: 10px;
+    padding: 10px 20px;
+    width: 81%;
+}
+
+
+div.footer-textarea {
+    display: block;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+textarea {
+    width: 80%;
+    height: 150px;
+}
+
+div.footer-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+div.footer-btn a {
+    font-size: 0.8rem;
+    padding: 10px 40px;
+    letter-spacing: 1.5px;
+} 
+}
+
+@media (max-width:360px) {
+     /* NAV*/
+     
+    ul li a:hover {
+        font-size:1.5rem ;
+        background: transparent;
+        
+    }
+
+   /* HERO SECTION */
+    
+div.hero-section {
+    padding: 2.5rem;
+}
+
+div.hero-content-heading h3 {
+    font-size: 1.2rem;
+}
+
+div.hero-content-btn a:hover {
+    font-size: 0.9rem;
+}  
+
+  /* SUB-HERO SECTION */
+
+  div.hero-background {
+    padding: 5rem 2rem ;
+}
+
+div.background {
+    padding: 10px 25px;
+}
+
+div.hero-background-pos {
+    display:none;
+}
+
+
+div.snapshot-team h2 {
+    font-size: 1.3rem;
+    letter-spacing: 1.5px;
+}
+
+div.snapshot-team p {
+    padding: 1rem 1rem;
+    
+}
+
+div.snapshot-box-content {
+    flex-direction: column;
+    align-items: center;
+}
+
+div.box1 {
+    padding: 10px 20px;
+    margin-left: 20px;
+    width: 250px;
+    height: 220px;
+    margin-bottom: 20px;
+    
+}
+
+div.box3 {
+    padding: 10px 20px;
+    margin-left: 20px;
+    width: 250px;
+    height: 220px;
+    margin-bottom: 20px;
+}
+
+     /* GALLERY */
+
+div.gallery-section {
+    padding: 3rem;
+}
+
+div.gallery-content h4 {
+    font-size: 1.3rem;
+}
+
+div.gallery-content p {
+    padding-top: 0.9rem;
+}
+
+   /* FOOTER */
+   
+div.footer {
+    padding: 3rem 1.5rem 1rem 1.5rem;
+}
+
+div.footer-content h4 {
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+div.footer-content p {
+    font-size: .9rem;
+    padding:.5rem 2rem 0 2rem;
+}
+
+input[type="text"] {
+    margin-top: 1rem;
+    padding: 10px 30px;
+    width: 76%;
+}
+
+input[type="email"] {
+    padding: 10px 30px;
+    width: 76%;
+}
+
+textarea {
+    padding: 10px 30px;
+    width: 75%;
+    height: 120px;
+}
+
+div.footer-btn a {
+    font-size: 0.7rem;
+    padding: 10px 25px;
+    letter-spacing: 1.5px;
+}
+
+div.footer-btn a:hover {
+    font-size: 0.7rem;
+} 
+
+div.footer h6 {
+    font-size: .8rem;
+    padding-top: 5rem;
 }

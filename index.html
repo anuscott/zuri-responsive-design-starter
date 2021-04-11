@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Webpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="menu-btn"><i class="fas fa-bars"></i></div>
     <div class="nav-bar">
         <div class="logo">Snapshot</div>
         <ul class="nav-links">
@@ -23,7 +25,7 @@
     <div class="hero-section">
         <div class="hero-content-heading">
             <h3>Let's take a snapshot</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero beatae quod molestias voluptas nam <br> facere numquam quos pariatur repellendus excepturi!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero molestias voluptas nam <br> facere numquam quos pariatur excepturi!</p>
         </div>
         <div class="hero-content-btn">
             <a href="#">Learn More</a>
@@ -103,5 +105,9 @@
         </div>
         <h6>Copyright &copy; 2021 Zuri Training.</h6>
     </div>
+    <script>
+        document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.nav-links').classList.toggle('show'));
+        
+    </script>
 </body>
 </html>
