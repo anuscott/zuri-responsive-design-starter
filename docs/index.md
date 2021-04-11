@@ -1,37 +1,113 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="menu-btn"><i class="fas fa-bars"></i></div>
+    <div class="nav-bar">
+        <div class="logo">Snapshot</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
 
-You can use the [editor on GitHub](https://github.com/anuscott/zuri-responsive-design-starter/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
+    <!-- Hero section -->
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+    <div class="hero-section">
+        <div class="hero-content-heading">
+            <h3>Let's take a snapshot</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero molestias voluptas nam <br> facere numquam quos pariatur excepturi!</p>
+        </div>
+        <div class="hero-content-btn">
+            <a href="#">Learn More</a>
+        </div>
+    </div>
 
-### Markdown
+    <!-- sub-hero section -->
+    <div class="hero-background">
+        <div class="background">
+            <h4>Background</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus sint ab rerum obcaecati totam neque quam corrupti dolores? Ipsam tempora consequatur quaerat. Voluptates accusamus molestiae nulla sapiente explicabo tempore possimus?</p>
+        </div>
+        <div class="hero-background-pos"></div>
+    </div>
+    <div class="snapshot-team">
+        <h2>Snapshot Team</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, nesciunt!</p>
+    </div>
+    <div class="snapshot-box">
+        <div class="snapshot-box-content">
+            <div class="box1">
+                    <div class="circle"></div>
+                    <h5>Linda, Manager</h5>
+            </div>
+            <div class="box1">
+                <div class="circle"></div>
+                <h5>Linda, Manager</h5>
+            </div>
+            <div class="box3">
+                <div class="circle"></div>
+                <h5>Linda, Manager</h5>
+            </div>
+        </div>
+    </div>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+    <!-- Gallery section -->
+    <div class="gallery-section">
+        <div class="gallery-content">
+            <h4>Gallery</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, sapiente. Nullae rem!</p>
+        </div>
+        <div class="gallery-img">
+            <div>
+                <div class="img">
+                    <img src="https://image.freepik.com/free-vector/shining-circle-purple-lighting-isolated-dark-background_1441-2396.jpg" alt="">
+                </div>
+                <div class="img">
+                    <img src="https://image.freepik.com/free-vector/shining-circle-purple-lighting-isolated-dark-background_1441-2396.jpg" alt="">
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://image.freepik.com/free-vector/shining-circle-purple-lighting-isolated-dark-background_1441-2396.jpg" alt="">
+                </div>
+                <div class="img">
+                    <img src="https://image.freepik.com/free-vector/shining-circle-purple-lighting-isolated-dark-background_1441-2396.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/anuscott/zuri-responsive-design-starter/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+    <!-- Footer section -->
+    <div class="footer">
+        <div class="footer-content">
+            <h4>Send a message</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, sapiente. Nuleos rem!</p>
+        </div>
+        <div class="footer-input">
+            <input type="text" placeholder="Name"> 
+            <input type="email" placeholder="Email">
+        </div>
+        <div class="footer-textarea">
+            <textarea placeholder="Message"></textarea>
+        </div>
+        <div class="footer-btn">
+            <a href="#">Send Message</a>
+        </div>
+        <h6>Copyright &copy; 2021 Zuri Training.</h6>
+    </div>
+    <script>
+        document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.nav-links').classList.toggle('show'));
+        
+    </script>
+</body>
+</html>
